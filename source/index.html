@@ -4,9 +4,103 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="main-page">
+    <div class="main-page__wrapper">
+      <header class="main-page__header header">
+        <a class="logo header__logo"><img class="header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип Седона"></a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru">Html academy</a></li>
+          </ul>
+        </nav>
+        <div class="layout-welcome">
+          <img class="layout-welcome__image" src="http://placehold.it/150x100" width="" height="" alt="Добро пожаловать">
+        </div>
+      </header>
+      <main class="main-page__main">
+        <section class="advantages">
+        <div class="advantages__wrapper">
+          <h1 class="main-page__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="main-page__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <span class="advantages__number">— №1 —</span>
+              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <img class="advantages__image" src="http://placehold.it/150x100" width="" height="" alt="">
+            <ul class="sedona-features">
+              <li class="sedona-features__item">
+                <h4 class="sedona-features__title">Жилье</h4>
+                <img class="sedona-features__image" src="http://placehold.it/150x100" width="" height="" alt="">
+                <p class="sedona-features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="sedona-features__item">
+                <h4 class="sedona-features__title">Сувениры</h4>
+                <img class="sedona-features__image" src="http://placehold.it/150x100" width="" height="" alt="">
+                <p class="sedona-features__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="sedona-features__item">
+                <h4 class="sedona-features__title">Еда</h4>
+                <img class="sedona-features__image" src="http://placehold.it/150x100" width="" height="" alt="">
+                <p class="sedona-features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <span class="advantages__number">— №2 —</span>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <img class="advantages__image" src="http://placehold.it/150x100" width="" height="" alt="">
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <span class="advantages__number">— №3 —</span>
+              <p class="advantages__description">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <span class="advantages__number">— №4 —</span>
+              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <span class="advantages__number">— №5 —</span>
+              <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
+        </section>
+        <section class="map">
+          <!-- Здесь будет карта -->
+        </section>
+      </main>
+      <footer class="main-page__footer footer">
+      <div class="footer__wrapper">
+        <p class="footer__hashtag hashtag">#visitsedona</p>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item--twitter" href="#"><img class="social__item--twitter__logo" src="http://placehold.it/150x100" width="" height="" alt="Седона в Твиттере"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item--facebook" href="#"><img class="social__item--facebook__logo" src="http://placehold.it/150x100" width="" height="" alt="Седона в Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item--youtube" href="#"><img class="social__item--youtube__logo" src="http://placehold.it/150x100" width="" height="" alt="Седона в Ютубе"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <img class="copyright__image" src="http://placehold.it/150x100" width="" height="" alt="">
+        </p>
+      </div>
+      </footer>
+    </div>
   </body>
 </html>
