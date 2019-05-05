@@ -23,3 +23,22 @@
   width: 270px;
   color: #333333;
 }
+
+@media (min-width: @tablet-width) {
+  .main-page__wrapper {
+    width: @tablet-width;
+  }
+  .main-page__title {
+    margin: 0 auto;
+    width: 400px;
+  }
+  .main-page__description {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-page__wrapper {
+    width: @desktop-width;
+  }
+}

@@ -5,6 +5,7 @@
 
 .photo-page__title {
   margin: 0;
+  padding-top: 30px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -19,4 +20,24 @@
   padding: 0 25px;
   text-align: center;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__wrapper {
+    width: @tablet-width;
+  }
+  .photo-page__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+  .photo-page__description {
+    width: 430px;
+    margin: 35px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-page__wrapper {
+    width: @desktop-width;
+  }
 }
