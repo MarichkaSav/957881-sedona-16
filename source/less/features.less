@@ -35,3 +35,30 @@
   font-weight: 400;
   color: #333333;
 }
+
+@media (min-width: @tablet-width) {
+  .features {
+    outline: 3px solid red;
+    display: flex;
+  }
+  .features__description {
+    width: auto;
+  }
+  .features__item--burger {
+    order: 2;
+  }
+  .features__item--house {
+    order: 1;
+  }
+  .features__item--gift {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    outline: 5px solid red;
+    min-height: 330px;
+    align-items: center;
+  }
+}
