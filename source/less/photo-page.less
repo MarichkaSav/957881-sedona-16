@@ -5,7 +5,8 @@
 
 .photo-page__title {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -18,8 +19,15 @@
   font-weight: 400;
   width: 270px;
   padding: 0 25px;
+  padding-bottom: 20px;
   text-align: center;
   color: #333333;
+}
+
+@media (max-width: @mobile-width-only) {
+  .photo-page .layout-welcome-background__image {
+    height: 158px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -29,15 +37,29 @@
   .photo-page__title {
     font-size: 30px;
     line-height: 26px;
+    padding-top: 75px;
   }
   .photo-page__description {
     width: 430px;
     margin: 35px auto;
+  }
+  .photo-page .site-list__link--photo {
+    color: #766357;
+    &:hover,
+    &:focus {
+      color:#604e43;
+    }
+    &:active {
+      color:#dbd8d5;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-page__wrapper {
     width: @desktop-width;
+  }
+  .photo-page__title {
+    padding-top: 110px;
   }
 }

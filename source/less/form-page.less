@@ -3,9 +3,25 @@
   margin: 0 auto;
 }
 
+@media (max-width: @mobile-width-only) {
+  .form-page .layout-welcome-background__image {
+    height: 158px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form-page__wrapper {
     width: @tablet-width;
+  }
+  .form-page .site-list__link--form {
+    color: #766357;
+    &:hover,
+    &:focus {
+      color:#604e43;
+    }
+    &:active {
+      color:#dbd8d5;
+    }
   }
 }
 

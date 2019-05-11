@@ -27,9 +27,23 @@
   text-align: center;
 }
 
+@media (max-width: @mobile-width-only) {
+  .advantages__block--1 .advantages__title {
+    padding-top: 58px;
+  }
+  .advantages__block--2 .advantages__title {
+    padding-top: 38px;
+  }
+  .advantages__block--1 .advantages__description,
+  .advantages__block--2 .advantages__description {
+    padding-bottom: 35px;
+  }
+}
+
 .advantages__title {
   margin-top: 0;
-  padding-top: 30px;
+  margin-bottom: 15px;
+  padding-top: 25px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -44,7 +58,7 @@
 .advantages__description {
   margin-bottom: 0;
   width: 250px;
-  padding: 0 35px 30px 35px;
+  padding: 0 35px 25px 35px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -54,16 +68,22 @@
   .advantages {
     outline: 3px solid red;
   }
-
+  .advantages__item--true-city {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .advantages__block--1 {
-    float: left;
     padding: 0;
     margin: 0;
     max-width: 256px;
     min-height: 256px;
   }
+  .advantages__item--devil-bridge {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .advantages__block--2 {
-    float: right;
+    order: 2;
     padding: 0;
     margin: 0;
     max-width: 256px;
