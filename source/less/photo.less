@@ -13,6 +13,8 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  width: 310px;
+  padding-top: 15px;
 }
 
 .photo__author {
@@ -22,46 +24,108 @@
   font-weight: 400;
   color: #333333;
   text-transform: initial;
+  width: 310px;
+  padding-bottom: 5px;
 }
 
 .photo__likes-number {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  padding-left: 10px;
+  padding-bottom: 13px;
 }
 
-.photo__item {
-  display: flex;
-  flex-direction: column;
-}
+  .photo__item {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding: 0 20px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    margin-bottom: -1px;
+    }
+  }
 
 @media (min-width: @tablet-width) {
   .photo__wrapper {
     width: 648px;
     margin: 0 auto;
   }
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .photo__item:not(:nth-child(1)) {
     width: 324px;
   }
-  .photo__item--sergey {
-    float: left;
+  .photo__author {
+    padding-left: 20px;
+    width: 230px;
+  }
+  .photo__title {
+    padding-left: 20px;
+    width: 330px;
   }
   .photo__image {
     height: 267px;
   }
   .photo__image--boris {
+    width: 648px;
     height: 400px;
   }
+  .photo__title--boris {
+    width: 428px;
+  }
+  .photo__author--boris {
+    width: 548px;
+  }
+  .photo__text-wrapper {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  //  .photo__text-wrapper--petr {
+  //   background-color: red;
+  //  }
 }
 
 @media (min-width: @desktop-width) {
   .photo__wrapper {
     width: 1200px;
   }
-  .photo__item--petr {
-    float: left;
-  }
   .photo__item:not(:nth-child(1)) {
     width: 400px;
+  }
+  .photo__image--boris {
+    width: 1200px;
+  }
+  .photo__author {
+    width: 310px;
+    color: white;
+  }
+  .photo__title {
+    width: 380px;
+  }
+  #Shape {
+    fill: #ffffff;
+  }
+  .photo__title--boris {
+    width: 1050px;
+  }
+  .photo__author--boris {
+    width: 1078px;
+  }
+  .photo__item {
+    position: relative;
+    color: white;
+  }
+  .photo__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

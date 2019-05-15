@@ -3,9 +3,63 @@
   margin: 0 auto;
 }
 
+.form-page .layout-welcome-text__image {
+  width: 225px;
+  height: 140px;
+  padding-bottom: 17px;
+}
+
+.form-page .layout-welcome-background {
+  position: relative;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-position: -225px -230px;
+  background-repeat: no-repeat;
+  background-color: #678fa8;
+  min-height: 18px;
+  padding-top: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 27px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("../img/bg-intro-triangle-mobile.svg");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form-page__wrapper {
     width: @tablet-width;
+  }
+  .form-page .site-list__link--form {
+    color: #766357;
+    &:hover,
+    &:focus {
+      color:#604e43;
+    }
+    &:active {
+      color:#dbd8d5;
+    }
+  }
+  .form-page .layout-welcome-text__image {
+    width: 450px;
+    height: 350px;
+  }
+  .form-page .layout-welcome-background {
+    padding-top: 75px;
+    height: 520px;
+    background-position: 0;
+    &::before {
+      content: "";
+      background: url("../img/bg-intro-triangle-tablet.svg");
+    }
   }
 }
 
