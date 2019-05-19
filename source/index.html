@@ -68,7 +68,12 @@
                 <span class="advantages__number">—№1—</span>
                 <p class="advantages__description advantages__description--true-city">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.webp 2x, img/main-city-desktop@1x.webp"> -->
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg 2x, img/main-city-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg 2x, img/main-city-tablet@1x.jpg">
+                <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x, img/main-city-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
             <ul class="features">
               <li class="features__item features__item--house">
                 <h4 class="features__title features__title--house">Жилье</h4>
@@ -76,7 +81,7 @@
               </li>
               <li class="features__item features__item--gift">
                 <h4 class="features__title features__title--gift">Сувениры</h4>
-                <p class="features__description">Не только китайского, но и местного производства!</p>
+                <p class="features__description">Не только китайского,<br>но и местного производства!</p>
               </li>
               <li class="features__item features__item--burger">
                 <h4 class="features__title features__title--burger">Еда</h4>
@@ -86,11 +91,15 @@
             </li>
             <li class="advantages__item advantages__item--devil-bridge">
               <div class="advantages__block advantages__block--2">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <h3 class="advantages__title">Там есть мост&nbsp;дьявола</h3>
                 <span class="advantages__number">— №2 —</span>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.jpg">
+                <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x, img/main-bridge-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
             </li>
             <li class="advantages__item">
               <div class="advantages__block advantages__block--3">
@@ -103,7 +112,7 @@
               <div class="advantages__block advantages__block--4">
                 <h3 class="advantages__title">Красивая дорога</h3>
                 <span class="advantages__number">— №4 —</span>
-                <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
               </div>
             </li>
             <li class="advantages__item">

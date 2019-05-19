@@ -18,7 +18,7 @@
 }
 
 .features__item--house {
-  padding-top: 30px;
+    padding-top: 30px;
   &::before {
     content: url(../img/icon-house.svg);
     position: absolute;
@@ -66,10 +66,19 @@
   }
 
   .features__item {
+    margin-top: 60px;
     width: 256px;
+    min-height: 258px;
+  }
+  .features__title {
+    padding: 0;
+    padding-top: 45px;
+    font-size: 21px;
+    line-height: 21px;
   }
   .features__description {
     padding: 0;
+    padding-top: 10px;
     margin: 10px auto;
     width: 165px;
   }
@@ -78,11 +87,13 @@
   }
   .features__item--burger {
     order: 2;
+    padding-bottom: 0;
     &::before {
       position: static;
     }
   }
   .features__item--house {
+    padding-top: 12px;
     order: 1;
     &::before {
       position: static;
@@ -94,9 +105,6 @@
       position: static;
     }
   }
-  .features__title {
-    padding: 0;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -107,5 +115,14 @@
   }
   .features__item {
     width: 400px;
+  }
+  .features__description {
+    width: 295px;
+  }
+  .features__item--burger .features__description {
+    width: 295px;
+  }
+  .features__item--gift .features__description {
+    width: 215px;
   }
 }
