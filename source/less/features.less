@@ -20,30 +20,42 @@
 .features__item--house {
     padding-top: 30px;
   &::before {
-    content: url(../img/icon-house.svg);
+    content: "";
     position: absolute;
     left: 20px;
     top: 23px;
+    background-image: url("../img/icon-house.svg");
+    height: 38px;
+    width: 40px;
+    background-repeat: no-repeat;
   }
 }
 
 .features__item--gift {
   padding-top: 12px;
   &::before {
-    content: url(../img/icon-gift.svg);
+    content: "";
     position: absolute;
     left: 25px;
     top: 5px;
+    background: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 33px;
   }
 }
 .features__item--burger {
   padding-top: 12px;
   padding-bottom: 22px;
   &::before {
-    content: url(../img/icon-burger.svg);
+    content: "";
     position: absolute;
     left: 17px;
     top: 10px;
+    background-image: url("../img/icon-burger.svg");
+    height: 37px;
+    width: 40px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -72,7 +84,7 @@
   }
   .features__title {
     padding: 0;
-    padding-top: 45px;
+    padding-top: 85px;
     font-size: 21px;
     line-height: 21px;
   }
@@ -89,20 +101,32 @@
     order: 2;
     padding-bottom: 0;
     &::before {
-      position: static;
+      left: 87px;
+      top: 0;
+      width: 80px;
+      height: 80px;
+      background-size: contain;
     }
   }
   .features__item--house {
     padding-top: 12px;
     order: 1;
     &::before {
-      position: static;
+      left: 87px;
+      top: 0;
+      width: 80px;
+      height: 80px;
+      background-size: contain;
     }
   }
   .features__item--gift {
     order: 3;
     &::before {
-      position: static;
+      left: 97px;
+      top: 0;
+      width: 76px;
+      height: 75px;
+      background-size: contain;
     }
   }
 }
@@ -124,5 +148,20 @@
   }
   .features__item--gift .features__description {
     width: 215px;
+  }
+  .features__item--burger {
+    &::before {
+      left: 157px;
+    }
+  }
+  .features__item--house {
+    &::before {
+      left: 157px;
+    }
+  }
+  .features__item--gift {
+    &::before {
+      left: 167px;
+    }
   }
 }

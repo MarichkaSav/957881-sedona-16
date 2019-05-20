@@ -29,6 +29,10 @@
   border-top: 1px solid #9ac2db;
 }
 
+.site-list__item:nth-child(4) {
+  box-shadow: inset 0 -3px 5px -2px rgba(0,0,0,.5);
+}
+
 .site-list__link--main {
   &::before,
   &::after {
@@ -154,6 +158,9 @@
       display: none;
     }
   }
+  .site-list__item:nth-child(4) {
+    box-shadow: none;
+  }
   .site-list__item {
     width: 155px;
     text-align: center;
@@ -187,11 +194,12 @@
             background-size: cover;
           }
     padding-top: 75px;
-    height: 487px;
+    height: 517px;
     background-size: cover;
     &::before {
       content: "";
       background: url("../img/bg-intro-triangle-tablet.svg");
+      height: 57px;
     }
   }
 }
@@ -243,7 +251,7 @@
     height: 390px;
   }
   .layout-welcome-background {
-    background-position: -10px;
+    background-position: 0 0;
     padding-top: 58px;
     background: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover;
@@ -251,7 +259,7 @@
           (min-resolution: 1.5dppx) {
             background: url("../img/bg-back-desktop@2x.jpg");
             background-size: cover;
-            background-position: -10px 0;
+            background-position: 0 0;
           }
     &::before {
       content: "";
@@ -269,5 +277,11 @@
   }
   .site-list__item:nth-child(4) {
     width: 240px;
+  }
+  .header__logo-image {
+    top: 0;
+    width: 186px;
+    height: 95px;
+    margin-left: -93px;
   }
 }
