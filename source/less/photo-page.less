@@ -66,7 +66,9 @@
   }
   .photo-page__description {
     width: 430px;
-    margin: 35px auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 55px;
   }
   .photo-page .site-list__link--photo {
     color: #766357;
@@ -78,6 +80,27 @@
       color:#dbd8d5;
     }
   }
+  .photo-page .layout-welcome-text__image {
+    width: 465px;
+    height: 265px;
+  }
+  .photo-page .layout-welcome-background {
+    background: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 -230px;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+            background: url("../img/bg-back-tablet@2x.jpg");
+            background-size: cover;
+            background-position: 0 -225px;
+          }
+    height: 289px;
+    background-size: cover;
+    &::before {
+      content: "";
+      background: url("../img/bg-intro-triangle-tablet.svg");
+      height: 57px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -85,6 +108,30 @@
     width: @desktop-width;
   }
   .photo-page__title {
-    padding-top: 110px;
+    padding-top: 145px;
+  }
+  .photo-page__description {
+    margin-top: 17px;
+    margin-bottom: 58px;
+  }
+  .photo-page .layout-welcome-text__image {
+    width: 460px;
+    height: 285px;
+  }
+  .photo-page .layout-welcome-background {
+    background: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    background-position: 0 -215px;
+    height: 269px;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+            background: url("../img/bg-back-desktop@2x.jpg");
+            background-size: cover;
+            background-position: 0 -215px;
+          }
+    &::before {
+      content: "";
+      background: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 }

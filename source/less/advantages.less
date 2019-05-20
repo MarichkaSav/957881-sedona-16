@@ -13,7 +13,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 50%;
     transform: translateX(-50%);
     height: 37px;
@@ -54,6 +54,8 @@
   .advantages__block--1 .advantages__description,
   .advantages__block--2 .advantages__description {
     padding-bottom: 40px;
+    width: 270px;
+    padding-left: 25px;
   }
 }
 
@@ -94,6 +96,9 @@
     margin: 0;
     max-width: 256px;
     min-height: 256px;
+    &::before {
+      background-image: none;
+    }
   }
   .advantages__item--devil-bridge {
     display: flex;
@@ -106,15 +111,23 @@
     max-width: 256px;
     min-height: 256px;
   }
+  .advantages__block--1 .advantages__description,
+  .advantages__block--2 .advantages__description {
+    width: 170px;
+    margin-left: 8px;
+  }
   .advantages__description {
-    margin-left: 14px;
-    width: 165px;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    margin-left: 12px;
+    width: 158px;
     outline: 3px solid red;
-
   }
   .advantages__title {
-    padding: 30px 63px 0 63px;
-    width: 130px;
+    font-size: 21px;
+    line-height: 21px;
+    padding: 50px 48px 5px 48px;
+    width: 160px;
     outline: 3px solid red;
   }
   .advantages__list {
@@ -143,16 +156,31 @@
   }
   .advantages__image {
     width: 800px;
+    object-fit: cover;
   }
-  .advantages__description {
-    margin-left: 50px;
+  .advantages__block--1 .advantages__description {
+    width: 270px;
+    margin-left: 0;
+    padding: 10px 65px 0 65px;
+  }
+  .advantages__block--2 .advantages__description {
     width: 230px;
-  }
-  .advantages__description--true-city {
-    margin-left: 14px;
-    width: 280px;
+    margin-left: 0;
+    padding: 10px 85px 0 85px;
   }
   .advantages__title {
-    padding: 30px 135px 0 135px;
+    padding: 50px 120px 5px 120px;
+  }
+  .advantages__description {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    width: 290px;
+  }
+  .advantages__block--1 .advantages__title {
+    padding-top: 55px;
+  }
+  .advantages__block--2 .advantages__title {
+    padding-top: 55px;
   }
 }

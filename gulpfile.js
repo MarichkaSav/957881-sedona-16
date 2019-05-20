@@ -21,6 +21,12 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("webp", function() {
+  return gulp.src("source/img/**/*.jpg")
+    .pipe(webp({quality: 85}))
+    .pipe(gulp.dest("source/img"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",

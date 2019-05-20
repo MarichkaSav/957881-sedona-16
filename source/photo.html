@@ -63,7 +63,11 @@
           <p class="photo-page__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
           <ul class="photo__list">
             <li class="photo__item photo__item--boris">
-              <img class="photo__image photo__image--boris" src="img/photo-sunset-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@2x.jpg 2x, img/photo-sunset-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg">
+                <img class="photo__image photo__image--boris" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
               <div class="photo__text-wrapper">
                 <h3 class="photo__title photo__title--boris">Неродные просторы</h3>
                 <p class="photo__author photo__author--boris">Автор фото: Борис</p>
@@ -74,7 +78,11 @@
               </div>
             </li>
             <li class="photo__item photo__item--sergey">
-              <img class="photo__image photo__image--sergey" src="img/photo-cactus-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@2x.jpg 2x, img/photo-cactus-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg">
+                <img class="photo__image photo__image--sergey" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
               <div class="photo__text-wrapper">
                 <h3 class="photo__title">Местная растительность</h3>
                 <p class="photo__author">Автор фото: Сергей</p>
@@ -85,7 +93,11 @@
               </div>
             </li>
             <li class="photo__item photo__item--petr">
-              <img class="photo__image photo__image--petr" src="img/photo-roads-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@2x.jpg 2x, img/photo-roads-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg">
+                <img class="photo__image photo__image--petr" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
               <div class="photo__text-wrapper photo__text-wrapper--petr">
                 <h3 class="photo__title">Дорога на север</h3>
                 <p class="photo__author">Автор фото: Петр</p>
@@ -96,7 +108,11 @@
               </div>
             </li>
             <li class="photo__item photo__item--anton">
-              <img class="photo__image photo__image--anton" src="img/photo-bridge-mobile@1x.jpg" width="" height="" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg">
+                <img class="photo__image photo__image--anton" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg" width="" height="" alt="">
+              </picture>
               <div class="photo__text-wrapper">
                 <h3 class="photo__title">Мост дьявола</h3>
                 <p class="photo__author">Автор фото: Антон</p>
