@@ -46,7 +46,13 @@
             <li class="site-list__item"><a class="site-list__link site-list__link--form" href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--academy" href="https://htmlacademy.ru">Html academy</a></li>
           </ul>
-          <a class="header__logo"><img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона"></a>
+          <a class="header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+          </picture>
+          </a>
           <div class="main-navigation__toggle-wrapper">
             <button class="main-navigation__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -56,6 +62,55 @@
         </div>
       </header>
       <main class="form-page__main">
+        <section class="form">
+            <h1 class="visually-hidden">Форма отзыва о Седоне</h1>
+            <h2 class="form__title">Оставьте свой отзыв</h2>
+            <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <form class="form__review">
+              <ul class="form__list">
+                <li class="form__item">
+                  <h3>Представьтесь:</h3>
+                  <label for="name">Имя*:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="surname">Фамилия*:</label>
+                  <input type="text" id="surname" name="surname">
+                  <label for="father-name">Отчество:</label>
+                  <input type="text" id="father-name" name="father-name">
+                </li>
+                <li class="form__item">
+                  <h3>Контактная информация:</h3>
+                  <label for="phone-number">Контактный телефон*:</label>
+                  <input type="tel" id="phone-number" name="phone-number">
+                  <label for="email">Электронная почта*:</label>
+                  <input type="email" id="email" name="email">
+                </li>
+                <li class="form__item">
+                  <h3>Ваше общее впечатление:</h3>
+                  <label for="positive">Скорее положительное</label>
+                  <input type="radio" id="positive" name="positive">
+                  <label for="negative">Скорее отрицательное</label>
+                  <input type="radio" id="negative" name="negative">
+                  <label for="hard-to-say">Затрудняюсь ответить</label>
+                  <input type="radio" id="hard-to-say" name="hard-to-say">
+                </li>
+                <li class="form__item">
+                  <h3>Посещенные достопримечательности:</h3>
+                  <label for="devil-bridge">Мост Дьявола</label>
+                  <input type="checkbox" id="devil-bridge" name="devil-bridge">
+                  <label for="mountain-ring">Гора-Колокол</label>
+                  <input type="checkbox" id="mountain-ring" name="mountain-ring">
+                  <label for="slide-park">Слайд-парк</label>
+                  <input type="checkbox" id="slide-park" name="slide-park">
+                  <label for="mountaint-red">Красные скалы</label>
+                  <input type="checkbox" id="mountaint-red" name="mountaint-red">
+                </li>
+                  <h3>Опишите свои эмоции:</h3>
+                  <input type="text" id="emotions" name="emotions">
+                </li>
+              </ul>
+              <button class="form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            </form>
+        </section>
       </main>
       <footer class="form-page__footer footer">
           <p class="footer__hashtag">#visitsedona</p>
