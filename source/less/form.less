@@ -1,44 +1,27 @@
-.form__title {
-  padding: 0;
-  padding-top: 38px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.form__description {
-  padding: 0;
-  padding-top: 25px;
-  padding-bottom: 18px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: center;
-  color: #333333;
-  width: 280px;
-}
-
 .form__list {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__list h3 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  width: 100%;
+  padding-bottom: 2px;
 }
 
 .form__item {
   border-top: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__button {
@@ -46,8 +29,6 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 35px;
   margin-bottom: 48px;
   width: 280px;
@@ -56,4 +37,278 @@
   background-color: #81b3d2;
   color: #ffffff;
   border: none;
+}
+
+.form__item--introduction label {
+  margin: 0;
+  padding: 0;
+  width: 90px;
+  height: 58px;
+  align-self: flex-end;
+  width: 80px;
+  text-align: left;
+  color: #333333;
+}
+
+.form__item input {
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.form__item--introduction input {
+  width: 192px;
+  height: 58px;
+  margin-bottom: 20px;
+}
+
+.form__item--introduction {
+  padding-bottom: 5px;
+}
+
+.form__item--contacts h3 {
+  padding-bottom: 5px;
+}
+
+.form__item--contacts label {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form__item--contacts input {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  height: 58px;
+  width: 280px;
+}
+
+.form__item--contacts {
+  padding-bottom: 15px;
+}
+
+.form__item--impression input {
+  width: 30px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.form__item--impression label {
+  width: 230px;
+  font-weight: 700;
+  text-transform: initial;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 15px;
+  margin-bottom: 28px;
+}
+
+.form__item--impression {
+  padding-bottom: 15px;
+}
+
+.form__item--places label {
+  font-size: 18px;
+  line-height: 26px;
+  width: 230px;
+  font-weight: 700;
+  text-transform: initial;
+  margin-top: 12px;
+  margin-bottom: 42px;
+}
+
+.form__item--places input {
+  position: relative;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -8px;
+    width: 23px;
+    height: 16px;
+    border: none;
+    background-image: url("../img/icon-tick.svg");
+  }
+}
+
+.form__item--emotions input {
+  width: 275px;
+  height: 160px;
+  margin-bottom: 15px;
+}
+
+.form__item--emotions h3 {
+  padding: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .form__requiremets {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__item--introduction {
+    & h3 {
+      text-align: start;
+      padding-bottom: 35px;
+    }
+    width: 274px;
+    order: 2;
+    padding-top: 35px;
+    margin-left: 50px;
+  }
+  .form__item--impression {
+    & h3 {
+      text-align: start;
+      padding-bottom: 35px;
+    }
+    width: 324px;
+    padding-top: 35px;
+    order: 1;
+  }
+  .form__item--contacts {
+    & h3 {
+      padding-top: 25px;
+    }
+    order: 3;
+    width: 648px;
+  }
+  .form__item--places {
+    & h3 {
+      width: 650px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 40px;
+    }
+    width: 548px;
+    order: 4;
+    margin-left: 50px;
+    padding-bottom: 30px;
+  }
+  .form__item--emotions {
+    & h3 {
+      padding-bottom: 38px;
+    }
+    order: 5;
+    width: 648px;
+  }
+  .form__list h3 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .form__review {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__item {
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+  }
+  .form__item--contacts input {
+    width: 650px;
+    margin-bottom: 25px;
+  }
+  .form__item--places label {
+    width: 200px;
+  }
+  .form__item--emotions input {
+    width: 650px;
+  }
+  .form__button {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 43px;
+    margin-bottom: 48px;
+    width: 325px;
+    height: 58px;
+    text-align: center;
+  }
+  .form__requiremets {
+    padding-top: 50px;
+    width: 166px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__item--introduction {
+    width: 344px;
+    padding-top: 20px;
+    margin-left: 230px;
+  }
+  .form__item--impression {
+    width: 324px;
+    padding-top: 20px;
+  }
+  .form__review {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .form__item--contacts {
+    & h3 {
+      padding-bottom: 45px;
+    }
+    width: 960px;
+    padding-bottom: 10px;
+  }
+  .form__item--contacts input {
+    width: 250px;
+    margin-bottom: 25px;
+  }
+  .form__item--contacts label {
+    padding-left: 0;
+    padding-right: 0;
+    align-self: center;
+  }
+  .form__item--places {
+    & h3 {
+      width: 940px;
+    }
+    width: 940px;
+    margin-left: 0;
+    padding-bottom: 22px;
+  }
+  .form__item--places label {
+    width: 150px;
+  }
+  .form__item--emotions input {
+    width: 960px;
+  }
+  .form__item--emotions {
+    width: 960px;
+  }
+
+  .form__button {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 43px;
+    margin-bottom: 48px;
+    width: 480px;
+    height: 58px;
+    text-align: center;
+  }
+  .form__requiremets {
+    padding-top: 48px;
+    width: 167px;
+  }
 }

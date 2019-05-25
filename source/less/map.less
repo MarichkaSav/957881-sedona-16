@@ -1,3 +1,20 @@
+.map {
+  position: relative;
+}
+
+.map::after {
+
+  content: "";
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
 .map__wrapper {
   padding: 0 20px;
 }
@@ -35,7 +52,7 @@
   line-height: 26px;
   font-weight: 700;
   margin-top: 35px;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   width: 280px;
   height: 58px;
   text-transform: uppercase;

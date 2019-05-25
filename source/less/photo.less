@@ -49,6 +49,46 @@
     }
   }
 
+//   .range-controls {
+//     position: relative;
+//     margin-bottom: 32px;
+// }
+
+// .range-controls .scale {
+//     height: 2px;
+//     background: rgba(255, 255, 255, 0.3);
+// }
+
+// .range-controls .bar {
+//     width: 80%;
+//     height: 2px;
+//     background: black;
+// }
+
+// .range-toggle {
+//     position: absolute;
+//     top: -9px;
+//     width: 4px;
+//     height: 4px;
+//     background: #ababab;
+//     border: 8px solid black;
+//     border-radius: 50%;
+//     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+//     cursor: pointer;
+// }
+
+// .range-toggle:hover {
+//     background: #1c4f80;
+// }
+
+// .range-toggle-min {
+//     left: 0;
+// }
+
+// .range-toggle-max {
+//     left: 78%;
+// }
+
 @media (min-width: @tablet-width) {
   .photo__wrapper {
     width: 648px;
@@ -63,6 +103,7 @@
   }
   .photo__author {
     padding-left: 20px;
+    padding-bottom: 15px;
     width: 220px;
   }
   .photo__title {
@@ -88,6 +129,18 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 80px;
+  }
+  .photo__likes-wrapper {
+    position: relative;
+  }
+  .photo__likes-number {
+    position: absolute;
+    bottom: 14px;
+    left: 20px;
+  }
+  .photo__likes-image {
+    position: absolute;
+    bottom: 31px;
   }
 }
 
@@ -115,7 +168,7 @@
     width: 1050px;
   }
   .photo__author--boris {
-    width: 1078px;
+    width: 1108px;
   }
   .photo__item {
     position: relative;
@@ -125,5 +178,11 @@
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  .photo__likes-number {
+    left: 7px;
+  }
+  .photo__likes-image {
+    right: -8px;
   }
 }
