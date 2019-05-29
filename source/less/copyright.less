@@ -4,11 +4,11 @@
   justify-content: space-between;
   align-items: center;
   width: 126px;
-  padding: 25px 97px 20px 97px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  height: 45px;
 }
 
 .copyright__link {
@@ -18,6 +18,14 @@
   }
   &:active {
     fill: #b2b2b2;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .copyright {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
   }
 }
 

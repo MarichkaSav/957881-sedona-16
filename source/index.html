@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!-- Pixel Glass -->
   <style>
@@ -87,7 +89,7 @@
               </li>
               <li class="features__item features__item--gift">
                 <h4 class="features__title features__title--gift">Сувениры</h4>
-                <p class="features__description">Не только китайского,<br>но и местного производства!</p>
+                <p class="features__description">Не только китайского,<br> но и местного производства!</p>
               </li>
               <li class="features__item features__item--burger">
                 <h4 class="features__title features__title--burger">Еда</h4>
@@ -132,6 +134,16 @@
         </div>
         </section>
         <section class="map">
+          <div class="map__wrapper">
+            <h2 class="map__title">Заинтересовались?</h2>
+            <p class="map__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+            <button class="map__button">Найти гостиницу</button>
+          </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg">
+            <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x, img/bg-map-mobile@1x.jpg">
+          </picture>
         </section>
       </main>
       <footer class="main-page__footer footer">

@@ -1,0 +1,103 @@
+.map {
+  position: relative;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
+.map__wrapper {
+  padding: 0 20px;
+}
+
+.map__title {
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.map__description {
+  padding: 0;
+  padding-top: 18px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+@media (max-width: @mobile-width-only) {
+  .map__description br {
+    display: none;
+  }
+}
+
+.map__button {
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  width: 280px;
+  height: 58px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map__title {
+    padding-top: 58px;
+    font-size: 30px;
+  }
+
+  .map__description {
+    width: 480px;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+
+  .map__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 43px;
+    margin-bottom: 58px;
+    width: 460px;
+  }
+  .map__image {
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__title {
+    padding-top: 54px;
+  }
+  .map__description {
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .map__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 43px;
+    margin-bottom: 65px;
+    width: 460px;
+  }
+}
