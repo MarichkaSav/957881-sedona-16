@@ -381,7 +381,6 @@ img {
 }
 .main-navigation {
   padding: 0;
-  outline: 1px solid red;
 }
 .site-list {
   margin: 0;
@@ -522,7 +521,6 @@ img {
 }
 @media (min-width: 768px) {
   .main-navigation {
-    outline: 3px solid red;
     background-color: #ffffff;
     min-height: 56px;
     position: relative;
@@ -550,7 +548,6 @@ img {
     min-height: 41px;
   }
   .site-list__item {
-    outline: 3px solid red;
     background-color: #ffffff;
     border: none;
     width: 155px;
@@ -656,9 +653,6 @@ img {
     background-position: 0 0;
   }
 }
-.advantages {
-  outline: 1px solid red;
-}
 .advantages__list {
   padding: 0;
   margin: 0;
@@ -733,9 +727,6 @@ img {
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  .advantages {
-    outline: 3px solid red;
-  }
   .advantages__item--true-city {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -778,14 +769,12 @@ img {
     padding-bottom: 40px;
     margin-left: 14px;
     width: 158px;
-    outline: 3px solid red;
   }
   .advantages__title {
     font-size: 21px;
     line-height: 23px;
     padding: 48px 48px 3px 48px;
     width: 160px;
-    outline: 3px solid red;
   }
   .advantages__list {
     display: -webkit-box;
@@ -800,9 +789,6 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .advantages {
-    outline: 5px solid red;
-  }
   .advantages__block {
     min-height: 256px;
   }
@@ -916,7 +902,6 @@ img {
 }
 @media (min-width: 768px) {
   .features {
-    outline: 3px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -983,7 +968,6 @@ img {
 }
 @media (min-width: 1200px) {
   .features {
-    outline: 5px solid red;
     min-height: 330px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1103,9 +1087,6 @@ img {
     width: 460px;
   }
 }
-.footer {
-  outline: 1px solid red;
-}
 .footer__hashtag {
   margin-top: 0;
   padding-top: 35px;
@@ -1123,7 +1104,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    outline: 3px solid red;
     min-height: 120px;
     padding-left: 60px;
     padding-right: 60px;
@@ -1132,7 +1112,6 @@ img {
   .footer__hashtag {
     margin: 0;
     padding: 0;
-    outline: 3px solid red;
     height: 48px;
     padding-top: 7px;
   }
@@ -1180,7 +1159,6 @@ img {
 @media (min-width: 768px) {
   .footer__social-list {
     padding-left: 75px;
-    outline: 3px solid red;
     margin: 0;
   }
 }
@@ -1218,12 +1196,8 @@ img {
 }
 @media (min-width: 768px) {
   .copyright {
-    outline: 3px solid red;
     padding: 0;
   }
-}
-.photo {
-  outline: 1px solid red;
 }
 .photo__list {
   margin: 0;
