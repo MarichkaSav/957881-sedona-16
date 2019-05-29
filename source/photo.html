@@ -7,36 +7,6 @@
     <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* �� ��������� ��������� ����� */
-      background-image: url( "pp/img/sedona-photo-mobile.jpg" );
-    }
-    /* ������� */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* ���������� ����� */
-        background-image: url( "pp/img/sedona-photo-tablet.jpg" );
-      }
-    }
-    /* ������� */
-    @media ( min-width: 1150px ) {
-      HTML {
-        /* ���������� ����� */
-        background-image: url( "pp/img/sedona-photo-desktop.jpg" );
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
-  <link rel="stylesheet" href="pp/pp-style.css">
-  <script src="pp/pp-script.js"></script>
-<!-- // Pixel Glass -->
   </head>
   <body class="photo-page">
     <div class="photo-page__wrapper">
@@ -76,6 +46,7 @@
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg">
                 <img class="photo__image photo__image--boris" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg" width="" height="" alt="">
               </picture>
+              <div class="photo__text-main-wrapper photo__text-main-wrapper--boris">
               <div class="photo__text-wrapper">
                 <h3 class="photo__title photo__title--boris">Неродные просторы</h3>
                 <p class="photo__author photo__author--boris">Автор фото: Борис</p>
@@ -86,6 +57,7 @@
                   <span class="photo__likes-number photo__likes-number--boris">1350</span>
                 </div>
               </div>
+              </div>
             </li>
             <li class="photo__item photo__item--sergey">
               <picture>
@@ -93,6 +65,7 @@
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg">
                 <img class="photo__image photo__image--sergey" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg" width="" height="" alt="">
               </picture>
+              <div class="photo__text-main-wrapper">
               <div class="photo__text-wrapper">
                 <h3 class="photo__title">Местная растительность</h3>
                 <p class="photo__author">Автор фото: Сергей</p>
@@ -103,6 +76,7 @@
                   <span class="photo__likes-number">143</span>
                 </div>
               </div>
+              </div>
             </li>
             <li class="photo__item photo__item--petr">
               <picture>
@@ -110,6 +84,7 @@
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg">
                 <img class="photo__image photo__image--petr" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg" width="" height="" alt="">
               </picture>
+              <div class="photo__text-main-wrapper">
               <div class="photo__text-wrapper photo__text-wrapper--petr">
                 <h3 class="photo__title">Дорога на север</h3>
                 <p class="photo__author">Автор фото: Петр</p>
@@ -120,6 +95,7 @@
                   <span class="photo__likes-number">96</span>
                 </div>
               </div>
+              </div>
             </li>
             <li class="photo__item photo__item--anton">
               <picture>
@@ -127,6 +103,7 @@
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg">
                 <img class="photo__image photo__image--anton" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg" width="" height="" alt="">
               </picture>
+              <div class="photo__text-main-wrapper">
               <div class="photo__text-wrapper">
                 <h3 class="photo__title">Мост дьявола</h3>
                 <p class="photo__author">Автор фото: Антон</p>
@@ -136,6 +113,7 @@
                   </svg>
                   <span class="photo__likes-number">254</span>
                 </div>
+              </div>
               </div>
             </li>
           </ul>
