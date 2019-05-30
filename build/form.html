@@ -26,7 +26,7 @@
           </picture>
           </a>
           <div class="main-navigation__toggle-wrapper">
-            <button class="main-navigation__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-navigation__toggle main-navigation__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
         <div class="layout-welcome-background">
@@ -62,23 +62,25 @@
                 </li>
                 <li class="form__item form__item--impression">
                   <h3>Ваше общее впечатление:</h3>
-                  <input type="radio" id="positive" name="impression">
-                  <label for="positive">Скорее положительное</label>
-                  <input type="radio" id="negative" name="impression">
-                  <label for="negative">Скорее отрицательное</label>
-                  <input type="radio" id="hard-to-say" name="impression">
-                  <label for="hard-to-say">Затрудняюсь ответить</label>
+                  <input class="input-radio visually-hidden" type="radio" id="positive" name="impression">
+                  <label class="label-radio" for="positive">Скорее положительное</label>
+                  <input class="input-radio visually-hidden" type="radio" id="negative" name="impression">
+                  <label class="label-radio" for="negative">Скорее отрицательное</label>
+                  <input class="input-radio visually-hidden" type="radio" id="hard-to-say" name="impression">
+                  <label class="label-radio" for="hard-to-say">Затрудняюсь ответить</label>
                 </li>
                 <li class="form__item form__item--places">
                   <h3>Посещенные<br>достопримечательности:</h3>
-                  <input type="checkbox" id="devil-bridge" name="devil-bridge">
-                  <label for="devil-bridge">Мост Дьявола</label>
-                  <input type="checkbox" id="mountain-ring" name="mountain-ring">
-                  <label for="mountain-ring">Гора-Колокол</label>
-                  <input type="checkbox" id="slide-park" name="slide-park">
-                  <label for="slide-park">Слайд-парк</label>
-                  <input type="checkbox" id="mountaint-red" name="mountaint-red">
-                  <label for="mountaint-red">Красные скалы</label>
+                  <div class="form__item--places__wrapper">
+                  <input class="input-checkbox visually-hidden" type="checkbox" id="devil-bridge" name="devil-bridge">
+                  <label class="label-checkbox" for="devil-bridge">Мост Дьявола</label>
+                  <input class="input-checkbox visually-hidden" type="checkbox" id="mountain-ring" name="mountain-ring">
+                  <label class="label-checkbox" for="mountain-ring">Гора-Колокол</label>
+                  <input class="input-checkbox visually-hidden" type="checkbox" id="slide-park" name="slide-park">
+                  <label class="label-checkbox" for="slide-park">Слайд-парк</label>
+                  <input class="input-checkbox visually-hidden" type="checkbox" id="mountaint-red" name="mountaint-red">
+                  <label class="label-checkbox" for="mountaint-red">Красные скалы</label>
+                  </div>
                 </li>
                 <li class="form__item form__item--emotions">
                   <h3>Опишите свои эмоции:</h3>

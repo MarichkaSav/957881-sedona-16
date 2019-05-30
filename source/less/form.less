@@ -23,12 +23,91 @@
   padding-right: 20px;
 }
 
+.form__item--places__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+}
+
+.label-checkbox {
+  padding-left: 55px;
+  position: relative;
+}
+
+.input-checkbox:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+
+.input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -12px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.label-radio {
+  padding-left: 58px;
+  position: relative;
+}
+
+.input-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 6px;
+  background-color: #333333;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 5px 5px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -12px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
 .form__button {
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-bottom: 50px;
   width: 280px;
   height: 58px;
@@ -90,7 +169,7 @@
 }
 
 .contacts-email__label {
-  padding-left: 5px;
+  padding-left: 20px;
   padding-right: 95px;
 }
 .contacts-phone-number__label {
@@ -180,28 +259,28 @@
   text-transform: none;
   margin-top: 11px;
   margin-bottom: 42px;
-  margin-right: 30px;
-  margin-left: 25px;
+  margin-right: 35px;
+  margin-left: 23px;
 }
 
-.form__item--places input {
-  position: relative;
-  margin-top: 0;
-  width: 55px;
-  height: 55px;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -12px;
-    margin-top: -8px;
-    width: 23px;
-    height: 16px;
-    border: none;
-    background-image: url("../img/icon-tick.svg");
-  }
-}
+// .form__item--places input {
+//   position: relative;
+//   margin-top: 0;
+//   width: 55px;
+//   height: 55px;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     margin-left: -12px;
+//     margin-top: -8px;
+//     width: 23px;
+//     height: 16px;
+//     border: none;
+//     background-image: url("../img/icon-tick.svg");
+//   }
+// }
 
 .form__item--emotions textarea {
   font-family: inherit;
@@ -235,31 +314,71 @@
 @media (min-width: @tablet-width) {
   .form__item--introduction {
     & h3 {
-      text-align: start;
-      padding-bottom: 33px;
+      text-align: left;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      margin-right: auto;
     }
     & input {
       width: 170px;
+      margin-bottom: 0;
+      margin-top: 0;
+      align-self: none;
+      flex-grow: 1;
+    }
+    & input:nth-child(3) {
+      margin-top: 58px;
+    }
+    & input:nth-child(5) {
+      margin-top: 0;
+      padding-left: 21px;
+    }
+    & input:nth-child(7) {
+      margin-top: 0;
+      padding-left: 18px;
     }
     & label {
-      width: 50px;
-      margin-top: 10px;
       align-self: center;
     }
-    width: 259px;
+    & label:nth-child(2) {
+      margin-top: 78px;
+    }
+    & label:nth-child(4) {
+      margin-top: 20px;
+      width: 88px;
+    }
+    & label:nth-child(6) {
+      margin-top: 20px;
+      width: 88px;
+    }
+    align-self: flex-start;
+    width: 265px;
     order: 2;
     padding-top: 35px;
     margin-left: 87px;
+    padding-bottom: 0;
   }
   .form__item--impression {
     & h3 {
-      text-align: start;
+      text-align: left;
       margin-left: 0;
-      padding-bottom: 35px;
+      padding-bottom: 25px;
     }
     & label {
       width: 220px;
-      text-align: start;
+      text-align: left;
+      padding-left: 75px;
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+    & label:nth-child(3) {
+      padding-top: 2px;
+    }
+    & label:nth-child(5) {
+      padding-top: 10px;
+    }
+    & label:nth-child(7) {
+      padding-top: 7px;
     }
     & input {
       margin-bottom: 25px;
@@ -270,7 +389,7 @@
   }
   .form__item--contacts {
     & h3 {
-      padding-top: 10px;
+      padding-top: 29px;
       width: 768px;
       margin-bottom: 26px;
     }
@@ -286,16 +405,20 @@
   .contacts-email__label {
     padding-left: 20px;
   }
+  .form__item--places__wrapper {
+    padding-left: 94px;
+  }
   .form__item--places {
     & h3 {
       width: 650px;
       text-align: center;
       margin: 0 auto;
       padding-top: 15px;
-      padding-bottom: 40px;
+      padding-bottom: 45px;
     }
     & label {
-      width: 200px;
+      width: 150px;
+      margin-bottom: 50px;
     }
     & input {
       justify-content: center;
@@ -310,6 +433,7 @@
       padding-bottom: 37px;
       width: 100%;
       padding-top: 3px;
+      margin-top: 0;
     }
     order: 5;
     width: 648px;
@@ -345,6 +469,7 @@
     width: 325px;
     height: 58px;
     text-align: center;
+    padding-right: 15px;
   }
   .form__requiremets {
     padding-top: 50px;
@@ -356,7 +481,7 @@
   .form__item--introduction {
     & h3 {
       text-align: start;
-      padding-bottom: 35px;
+      padding-bottom: 0;
     }
     & input {
       width: 290px;
@@ -364,7 +489,7 @@
     & label {
       width: 50px;
     }
-    width: 388px;
+    width: 398px;
     padding-top: 20px;
     margin-left: 135px;
   }
@@ -372,14 +497,35 @@
     & h3 {
       padding-left: 80px;
       width: 424px;
+      margin-bottom: 25px;
     }
     & label {
-      width: 350px;
+      width: 343px;
       text-align: start;
+      margin-left: 5px;
+      margin-top: 0;
+    }
+    & label:nth-child(3) {
+      margin-top: 22px;
+    }
+    & label:nth-child(5) {
+      margin-top: 20px;
+    }
+    & label:nth-child(7) {
+      margin-top: 22px;
     }
     & input {
       width: 65px;
-      margin-bottom: 25px;
+      margin-top: 5px;
+    }
+    & input:nth-child(2) {
+      margin-top: 0px;
+    }
+    & input:nth-child(4) {
+      margin-top: 0;
+    }
+    & input:nth-child(6) {
+      margin-top: 0;
     }
     width: 424px;
     padding-top: 20px;
@@ -391,23 +537,46 @@
   .form__item--contacts {
     & h3 {
       width: 1200px;
-      padding-bottom: 30px;
+      padding-bottom: 38px;
     }
     & input {
-      width: 300px;
-      margin-bottom: 25px;
+      width: 315px;
+      margin-bottom: 0;
       flex-grow: 1;
     }
-    & label {
+    & label:nth-child(2) {
       padding-left: 0;
       padding-right: 0;
-      margin-right: 25px;
+      margin-right: 15px;
+      align-self: center;
+    }
+    & label {
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 20px;
       align-self: center;
     }
     width: 960px;
+    padding-bottom: 33px;
+  }
+  .contacts-phone-number__input {
+    padding-left: 0;
+  }
+  .form__item input {
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+    color: #000000;
   }
   .contacts-email__label {
-    margin-left: 70px;
+    margin-left: 76px;
+  }
+  .contacts-phone-number__label {
+    margin-right: 0;
   }
 
   .email__wrapper {
@@ -415,21 +584,41 @@
     margin: 0;
     position: relative;
   }
+  .form__item--places__wrapper {
+    padding-left: 0;
+  }
   .form__item--places {
     & h3 {
       width: 960px;
       padding-bottom: 45px;
     }
     & label {
-      width: 130px;
+      margin-right: 25px;
       margin-left: 25px;
+    }
+    & label:nth-child(2) {
+      margin-right: 28px;
+      margin-left: 25px;
+    }
+    & label:nth-child(4) {
+      margin-right: 27px;
+      margin-left: 25px;
+    }
+    & label:nth-child(6) {
+      margin-right: 10px;
+      margin-left: 25px;
+    }
+    & label:nth-child(8) {
+      margin-right: 0;
+      margin-left: 24px;
+      width: 126px;
     }
     & input {
       justify-content: center;
     }
     width: 960px;
     margin-left: 0;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     padding-top: 5px;
     justify-content: space-between;
   }
@@ -446,9 +635,11 @@
     line-height: 26px;
     font-weight: 700;
     margin-left: 0;
-    margin-right: 20px;
-    margin-top: 43px;
+    margin-right: 22px;
+    margin-top: 40px;
     margin-bottom: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 480px;
     height: 58px;
     text-align: center;
